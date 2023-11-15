@@ -5,7 +5,8 @@ typedef enum {
   TYPE_UNKNOWN = 0,
   TYPE_ENCRYPT,
   TYPE_DECRYPT,
-  TYPE_PRINT_HELP
+  TYPE_PRINT_HELP,
+  TYPE_VERSION
 } app_type_t;
 
 app_type_t get_app_type(int argc, char *argv[]);

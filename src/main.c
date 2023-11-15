@@ -2,17 +2,11 @@
 #include <stdint.h>
 #include "app_types.h"
 #include "app_help.h"
+#include "app_version.h"
 #include "app.h"
 
 int main(int argc, char *argv[])
 {
-  // Debugging input params
-  // printf("argc = %d\n", argc);
-  // for (int i = 0; i < argc; i++)
-  // {
-  //   printf("argv[%d] = %s\n", i, argv[i]);
-  // }
-
   switch (get_app_type(argc, argv))
   {
     case TYPE_UNKNOWN:
@@ -28,6 +22,10 @@ int main(int argc, char *argv[])
     case TYPE_PRINT_HELP:
       print_help();
       return 0;
+    case TYPE_VERSION:
+      print_version();
+      return 0;
+    break;
     break;
     default:
     break;

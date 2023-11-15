@@ -7,9 +7,10 @@ Usage: xen [OPTION] SOURCE DEST\n\
 Encode / Decode a text file from SOURCE to DEST.\n\
 \n\
 Mandatory arguments to long options are mandatory for short options too.\n\
-  -h, --help        Print this help\n\
   -e, --encrypt     Encrypt text file\n\
   -d, --decrypt     Decrypt text file\n\
+  -h, --help        Print this help\n\
+  -v, --version     Get version of this software\n\
 \n\
 Exit status:\n\
   0    if OK,\n\

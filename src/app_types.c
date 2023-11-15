@@ -15,6 +15,10 @@ app_type_t get_app_type(int argc, char *argv[])
       {
         return TYPE_PRINT_HELP;
       }
+      else if ((strcmp(argv[1], "-v") == 0) || (strcmp(argv[1], "--version") == 0))
+      {
+        return TYPE_VERSION;
+      }
       else
       {
         return TYPE_UNKNOWN;

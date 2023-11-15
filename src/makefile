@@ -1,5 +1,5 @@
-all: app_types.c app_help.c app.c main.c
-	gcc -o xen app_types.c app_help.c app.c main.c
+all: app_types.c app_help.c app_version.c app.c main.c
+	gcc -o xen app_types.c app_help.c app_version.c app.c main.c
 
 clean:
 	rm xen *.o *.txt -f
